@@ -11,7 +11,7 @@ function generateCaptcha() {
 /* Dropdown Function */
 function toggleDropdown(header) {
   const content = header.nextElementSibling;
-  const icon = header.querySelector(".toggle-icon");
+  const icon = header.querySelector("#toggle-icon");
 
   if (content.style.display === "block") {
     content.style.display = "none";
