@@ -2,28 +2,34 @@
 @media (min-width: 376px){
   .appointment-button{
     gap: 20px;
-    min-width: 220px;
+    width: 220px;
   }
   .doctor-image{
-    max-height: 240px;
-    top: 31.5%;
+    height: 280px;
+    bottom: 0%;
   }
 }
+
 @media (min-width: 768px) {
   .book-appointment {
     display: flex;
     gap: 10px;
   }
-  .book-appointment-image {
-  height: 357px;
-}
+  .booking-appointment{
+    width: 100%;
+    overflow: hidden;
+  }
   .different-company-list {
     visibility: hidden;
   }
   .book-appointment-link {
-    width: 40%;
-    min-height: 7rem;
-    top: 40%;
+    width: 45%;
+    top: 32%;
+    height: 120px;
+  }
+  .book-appointment-image{
+    width: 67.15%;
+    height: 400px;
   }
   .text-1 {
     margin-bottom: -0.5rem;
@@ -37,106 +43,140 @@
     font-size: 10px;
   }
   .appointment-button {
-    margin-bottom: 0.5rem;
+    width: 190px;
   }
   .doctor-image{
-    max-height: 210px;
-    left: 28%;
-    transform: translateY(16.5%);
+    height: 370px;
+    right: 40%;
   }
   .container {
+    width: 100%;
     display: flex;
     position: relative;
   }
   .dental-guidance-section {
-    right: 1%;
-    top: 0.4%;
+    right: 0%;
+    top: 0%;
     position: absolute;
-    max-width: 45%;
-    max-height: 357px;
+    display: flex;
+    border: 1px solid orange;
+    justify-content: center;
+    width: 32.85%;
+    height: 400px;
+    border-radius: 0px;
   }
   .dental-guidance-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-height: 270px;
-    min-width: 250px;
-    max-width: 326px;
+    gap: 20px;
     background-color: rgba(255, 249, 244, 1);
-    padding: 1.5rem 0rem 1rem 0rem;
-    border-radius: 0 0 24px 24px;
   }
   .dental-guidance-head {
-    font-size: 18px;
+    font-size: 15px;
   }
   .dental-guidance-description {
-    font-size: 12px;
-    text-align: center;
+    font-size: 10px;
+    text-align: left;
     padding: 0 10px 0 10px;
   }
   .get-expert {
     display: none;
   }
-  .implants-type {
-    margin-top: 2rem;
-  }
+ 
 
   /* Removing all carousel functionality */
+  .implants-type{
+    height: 360px;
+    margin-top: 0px;
+  }
+
   .carousel-container {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
     overflow: visible;
     scroll-snap-type: none;
     display: flex;
+    height: 240px;
     flex-direction: row;
   }
 
   .carousel {
     display: flex;
     gap: 10px;
-    justify-content: center;
     width: 100%;
-    max-height: 300px;
+    height: 240px;
+    justify-content: center;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: none !important;
   }
   .implant-cards {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 417px;
   }
   .carousel-item {
     width: 350px;
-    overflow: hidden;
     display: flex;
+    height: 240px;
     flex-direction: row;
-    max-height: 280px;
+    scroll-snap-type: none !important;
+    overflow-x: hidden;
   }
-  .carousel-container {
-    min-width: fit-content;
-    min-height: 200px;
+  .teeth1, .teeth2{
+    width: 200px;
+    height: 240px;
   }
   .treatment-card {
     flex-direction: row;
-   
   }
-  .card-1 {
-    max-width: 50%;
-    max-height: 280px;
+  .card-content{
+    width: 140px;
+    height: 240px;
+    gap: 8px;
+    padding: 8px 10px 8px 10px;
   }
-  .card-title {
-    font-size: 12px;
+  .price-label{
+    font-size: 8px;
   }
-  .card-subtitle {
+  .price{
     font-size: 10px;
-  }
-  .card-list {
-    font-size: 10px;
-  }
-  .card-content .cta-button{
-    font-size: medium;
+    margin: 2px;
   }
   .cta-button{
-    padding: 5px;
+    width: 120px;
+    height: 20px;
+    font-size: 8px;
+  }
+.card-1,
+.card-2{
+  width: 320px;
+  height: 332px;
+}
+  .card-title {
+    font-size: 10px;
+    width: 120px;
+    height: 12px;
+  }
+  .card-subtitle{
+    font-size: 10px;
+    width: 140px;
+    line-height: 100%;
+    height: 21px;
+  }
+  .card-list {
+    font-size: 8px;
+    width: 140px;
+  }
+  .card-section{
+    width: 140px;
   }
   .rct {
     font-size: 12px;
+    height: 10px;
   }
   .card-1{
     max-width: 45%;
@@ -145,13 +185,17 @@
     max-width: 45%;
     max-height: 280px;
   }
+  #toggle-icon{
+    width: 16px;
+    font-size: 16px;
+    height: 16px;
+  }
   .navbarss {
     display: flex;
     flex-direction: row-reverse;
-    gap: 2rems;
-    align-items: center;
-    justify-content: space-between;
+    gap: 40px;
   }
+
   .btn-checkbox{
    display: flex;
    flex-direction: row;
@@ -160,37 +204,51 @@
    gap: 5px;
   }
   .checkbox-text{
-    font-size: smaller;
+    font-size: 10px;
+    font-weight: 400;
   }
-  .dropdown {
-    margin-top: 20px;
+  .dropdown-header{
+    gap: 10px;
+  }
+  .patients-say{
+    height: 500px;
+    margin-bottom: 0px;
   }
   .carousels-container {
-    max-width: 100%;
-    min-width: 15rem;
-    min-height: 14rem;
-    max-height: 25rem;
-    margin: 0 auto;
-    overflow: visible;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
     font-family: "Figtree", sans-serif;
   }
-  .patients-img {
-    max-height: 200px;
-    max-width: 150px;
-  }
+
   .carousels {
-    overflow-x: unset;
-    scroll-snap-type: none;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  overflow-y: hidden;
+  gap: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    height: 400px;
+     -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+  }
+  carousels::-webkit-scrollbar {
+    display: none;
   }
 
   .card {
-    flex-shrink: 1;
-    width: 150px;
-    scroll-snap-align: unset;
+    flex-shrink: 0;
+    width: 224px; 
+    height: 458px;
+   scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+    .card img {
+    width: 224px;
+    height: 350px;
+    object-fit: cover;
   }
   .name-role {
     display: flex;
@@ -206,7 +264,7 @@
   .treatment {
     color: rgba(245, 132, 32, 1);
     padding: 0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
   }
   .location {
@@ -214,20 +272,34 @@
   }
   .consultation-section {
     width: 100%;
-    min-height: 12rem;
-    max-height: 13rem;
     display: flex;
     justify-content: center;
   }
   .consultation-form {
-    min-width: 90%;
-    background-color: rgba(255, 249, 244, 1);
+    width: 95%;
+    background-color: rgb(121, 56, 2);
     display: flex;
     font-size: x-small;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border-radius: 20px;
+  }
+  .dental-guidance-form2{
+    height: 34px;
+    width: 98%;
+    display: flex;
+  }
+  .name-input .mobile-input{
+    width: 200px;
+    font-size: 16px;
+  }
+  .dental-guidance-form2 input{
+    height: 28px;
+  }
+  .checkbox2{
+    display: flex;
+    justify-content: flex-end;
   }
   .form2 {
     display: flex;
@@ -280,6 +352,56 @@
     gap: 10px;
     align-items: center;
   }
+  .appointment-clove-section{
+    height: 300px;
+  }
+  #captcha2{
+    width: 145px;
+  }
+  #book-free-consultation{
+    width: 306px;
+    height: 38px;
+  }
+.appointment-clove{
+  height: 240px;
+  flex-direction: column;
+  align-items: center;
+}
+.clove-text{
+  width: 542px;
+  height: 31px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.inputs{
+  justify-content: center;
+  width: 95.3%;
+  gap: 24px;
+  flex-direction: row;
+  display: flex;
+}
+.other{
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+  width: 90%;
+  height: 38px;
+  align-items: end;
+  justify-content: right;
+}
+.checkbox-text22{
+  display: inline;
+  text-align: end;
+}
+.checkboxDiv2{
+  width: 564px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 8px;
+  font-size: 12px;
+}
   .footer {
     display: flex;
     min-width: 768px;
@@ -308,42 +430,28 @@
   }
 }
 
-@media (min-width: 1024px){
-.book-appointment-link {
-    width: 50%;
-    min-height: 9rem;
-    top: 30%;
-  }
 
+
+@media (min-width: 1024px){
+  .book-appointment-link{
+    top: 34%;
+    padding: 24px 60px 24px 60px;
+  }
   .appointment-button{
-    min-width: 280px;
-    padding: 12px;
-    font-size: larger;
-    justify-content: center;
-  }
-  .doctor-image{
-    max-height: 256px;
-    left: 39%;
-    transform: translateY(-4.5%);
-  }
-  .text-1{
-    font-size: x-large;
-  }
-  .text-3{
-    font-size: large  ;
-  }
-  .dental-guidance-section {
-    max-width: 38%;
-  }
-  .dental-guidance-description{
-    text-align: center;
+    margin-top: 10px;
+    padding: 8px 12px 8px 12px;
+    font-size: 14px;
   }
   .implants-heading{
     font-size: 28px;
   }
+  .carousel{
+    gap: 40px;
+  }
   .implants-description{
     font-size: larger;
   }
+  /*
    .carousel-item {
     width: 450px;
     overflow: hidden;
@@ -384,46 +492,29 @@
   }
   .navbarss{
     gap: 4rem;
-  }
-  .btn-checkbox{
-   font-size: small;
-   align-items: center;
-   gap: 20px;
-  }
+  }*/
+
   .checkbox-text{
-    font-size: small;
+    font-size: 12px;
+    text-align: center;
   }
- .input-box{
-  min-width: 17rem;
-  min-height: 3rem;
- }
- .captcha-container2{
-  min-width: 8rem;
-  min-height: 3rem;
- }
- #captcha-input2{
-  min-width: 12rem;
-  min-height: 3rem;
- }
- #captcha-text2{
-  min-width: 5rem;
-  font-weight: 600;
-  font-size: large;
- }
- .captcha-refresh2{
-  min-width: 50px;
-  font-weight: 600;
-  font-size: xx-large;
- }
- .form2 {
-    display: flex;
-    flex-direction: column;
-    min-width: 900px;
-    max-width: 950px;
-    gap: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  #captcha2{
+    width: 208.65px;
   }
+  .captcha-code{
+    width: 75.04px;
+  }
+.checkbox-text22{
+  width: 564px;
+  font-family: figtree;
+  font-size: 400;
+  height: 19px;
+}
+.checkboxDiv{
+  gap: 8px;
+  display: flex;
+  height: 19px;
+}
   .footer{
     min-width: 100%;
     gap: 12rem;
@@ -435,16 +526,306 @@
     font-size: small;
   }
   }
-  .cta-button{
-    font-size: large;
-  }
 
 @media (min-width: 1440px){
+  .book-appointment{
+    width: 200px;
+    font-size: 16px;
+  }
+  .book-appointment p{
+    height: 11px;
+    width: 138px;
+    font-size: 16px;
+  }
+  .book-appointment .book-icon{
+    width: 19px;
+    height: 21px;
+  }
+  .booking-number{
+    width: 154px;
+    height: 38px;
+  }
+  .book-appointment-link{
+    width: 644px;
+    height: 153px;
+    padding: 24px 60px 24px 60px;
+    gap: 1px;
+  }
   .doctor-image{
-    left: 28%;  
+    width: 314px;
+    height: 406px;
+    left: 32.5%;
+  }
+  .booking-number p{
+    width: 106px;
+    height: 11px;
+  }
+  .right-header{
+    padding-right: 40px;
+  }
+  .book-appointment-image{
+    width: 67.15%;
+    height: 450px;
+  }
+  .dental-guidance-section{
+    width: 32.85%;
+    height: 450px;
+    border: 1px solid #FFE0C4;
+    padding: 24px 40px 24px 40px;
+  }
+  .dental-guidance-head{
+    width: 393px;
+    height: 26px;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: figtree;
+    color: #474747;
+  }
+  .dental-guidance-description{
+    text-align: left;
+    padding: 0;
+    width: 393px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    font-weight: 400;
+    font-family: figtree;
+    color: #474747;
+  }
+  .dental-guidance-form{
+    width: 393px;
+  }
+  .dental-guidance-form2{
+    width: 393px;
+    height: 256px;
+    gap: 20px;
+  }
+  .checkboxDiv{
+    height: 32px;
+    width: 564px;
+    align-items: end;
+  }
+  .book-consultation{
+    padding: 14px 16px 14px 16px;
+    border-radius: 24px;
+    font-size: 14px;
+    width: 393px;
+    height: 38px;
+    align-items: center;
+  }
+  .appointment-button{
+    margin-top: 20px;
+  }
+  .book-appointment-link .text-1{
+    width: 287px;
+    height: 18px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #303030;
+    line-height: 110%;
+    letter-spacing: 0%;
+    font-family: figtree;
+  }
+  .book-appointment-link .text-3{
+    width: 426px;
+    height: 21px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #4E4E4E;
+  }
+  .carousel-container{
+    width: 100%;
+    height: 332px;
+    overflow: hidden;
+  }
+  .carousel{
+    width: 1320px;
+    height: 332px;
+    gap: 40px;
+  }
+  .carousel-item{
+    width: 640px;
+    height: 332px;
+  }
+.carousel-item img{
+  width: 320px;
+  height: 332px;
+}
+.carousels{
+  width: 91.66%;
+}
+.card{
+  height: 398px;
+}
+.card-subtitle{
+  margin: 0px;
+}
+.rct{
+  margin: 0px
+}
+.price-label{
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.price{
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-content{
+  box-sizing: border-box;
+  width: 320px;
+  height: 332px;
+  padding: 16px 20px 16px 20px;
+  gap: 16px;
+}
+.price-list{
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.rct{
+  width: 99px;
+  height: 19px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.card-list{
+  width: 213px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.cta-button{
+  width: 181px;
+  height: 38px;
+  padding: 8px 20px 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-title{
+  color: black  ;
+  width: 235px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.card-section{
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.card-subtitle1{
+  color: #474747;
+  width: 280px;
+  height: 24px;
+  font-weight: 400px;
+  font-size: 16px;
+  margin: 0px;
+}
+.card-subtitle{
+  color: #474747;
+  width: 280px;
+  height: 30px;
+  font-weight: 400px;
+  font-size: 16px;
+}
+.card-section ul li{
+  width: 289px;
+}
+.inputs{
+  width: 1296px;
+  gap: 24px;
+  height: 44px;
+}
+#captcha2{
+  width: 306px;
+  border: 1px solid #FFE0C4;
+  padding: 17px 16px 17px 16px;
+  font-size: 14px;
+  color: #777777;
+  height: 38px;
+  border-radius: 24px 0px 0px 24px;
+}
+.captcha-code{
+  padding: 17px 16px 17px 16px;
+  border-radius: 0px 24px 24px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: figtree;
+  line-height: 100%;
+  color: white;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  background-color: #462512;
+}
+.captcha-section{
+  display: flex;
+  width: 416px;
+  height: 38px;
+}
+#captcha-input2{
+  width: 306px;
+}
+.clove-input{
+  width: 416px;
+  height: 38px;
+}
+.implants-type{
+  height: 417px;
+  gap: 20px;
+}
+.implants-head{
+  height: 65px;
+}
+
+  .implants-heading{
+    width: 355px;
+    height: 31px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    font-family: figtree;
+    color: #1A1A1A;
+  }
+  .header{
+    padding-left: 40px;
+    height: 70px;
+  }
+  .why-clove-image{
+    width: 461px;
+    height: auto;
+    object-fit: cover;
+  }
+  .why-description{
+    font-size: 20px;
+color: #474747;
+  }
+  .why-head{
+    font-size: 24px;
+    color: #303030;
+  }
+  .dropdown{
+    width: 624px;
+    height: 265px;
+    gap: 40px;
   }
   .navbarss{
-    gap: 10rem;
+    width: 1181px;
+    gap: 40px;
+    height: 422px;
+    justify-content: space-between;
   }
   .footer{
       justify-content: space-around;

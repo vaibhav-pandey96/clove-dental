@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="Responsive.css" />
 </head>
 
 <body>
@@ -45,151 +45,187 @@
                 <br />
                 <p class="text-3">Expert RCT. Zero Pain.</p>
                 <p class="text-3">Right here in Delhi</p>
-                    <button class="appointment-button">
+                <button class="appointment-button">
                     <img src="book.png" alt="logo" />Book Appointment
-                    </button>
-
+                </button>
             </div>
 
             <img src="doctor-image.png" class="doctor-image" alt="doctor" />
-
         </div>
-        <div class="dental-guidance-section">
-            <p class="dental-guidance-head">
-                Get Expert dental Guidance <br class="get-expert">
-                in Delhi
-            </p>
-            <p class="dental-guidance-description">
-                Book your free consultation today and take <br class="get-expert">
-                the first step towards healthy,<br class="get-expert">
-                beautiful teeth.
-            </p>
-            <div class="dental-guidance-form">
-                <input type="text" placeholder="Name" class="name-input" />
-                <input type="text" placeholder="Mobile Number" class="mobile-input" />
-                <div class="captcha-container">
-                    <input type="text" placeholder="Enter Captcha" id="captcha-input" />
-                    <p id="captcha-text">81UA</p>
-                    <button class="captcha-refresh" onclick="generateCaptcha()">
-                        ↻
-                    </button>
+        <div class="outer-box">
+            <div class="dental-guidance-section">
+                <p class="dental-guidance-head">
+                    Get Expert dental Guidance <br class="get-expert" />
+                    in Delhi
+                </p>
+                <p class="dental-guidance-description">
+                    Book your free consultation today and take <br class="get-expert" />
+                    the first step towards healthy,<br class="get-expert" />
+                    beautiful teeth.
+                </p>
+                <div class="dental-guidance-form">
+                    <input type="text" placeholder="Name" class="name-input" />
+                    <input type="text" placeholder="Mobile Number" class="mobile-input" />
+                    <div class="captcha-container">
+                        <input type="text" placeholder="Captcha" id="captcha-input" />
+                        <p id="captcha-text">81UA</p>
+                    </div>
+                    <div class="checkboxDiv">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="checkbox" />
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <p class="checkbox-text">
+                            I agree to CLOVE Dental's <a href="#">Terms</a> and
+                            <a href="#">Privacy Policy</a> and consent to contact via phone,
+                            email, or SMS.
+                        </p>
+                    </div>
+                    <button class="book-consultation">Book a Free Consultation</button>
                 </div>
-                <div class="checkbox-container">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <p class="checkbox-text">I agree to CLOVE Dental's <a href="#">Terms</a> and <a href="#">Privacy
-                            Policy</a> and consent to contact via phone, email, or SMS.</p>
-                </div>
-                <button class="book-consultation">Book a Free Consultation</button>
             </div>
         </div>
-        <!-- Appointment Booking Section ends here -->
+    </div>
+    <!-- Appointment Booking Section ends here -->
+    <!-- Implants section -->
 
-        <!-- Implants section -->
+    <div class="implants-type">
+        <div class="implants-head">
+            <p class="implants-heading">Types of Dental Implants</p>
+            <p class="implants-description">
+                The surgeon inserts an implant into the jawbone
+                <br class="get-expert" />
+                which acts as an anchor for an artificial tooth,
+                <br class="get-expert" />
+                called a crown
+            </p>
+        </div>
 
-        <div class="implants-type">
-            <div class="implants-head">
-                <p class="implants-heading">Types of Dental Implants</p>
-                <p class="implants-description">The surgeon inserts an implant into the jawbone <br class="get-expert">
-                    which acts as an
-                    anchor for an artificial tooth, <br class="get-expert"> called a crown</p>
-            </div>
-            
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <img src="card-1.png" alt="Card-1" class="card-1" />
-                            <div class="card-content">
-                                <h3 class="card-title">Root Canal Treatment</h3>
-                                <p class="card-subtitle">Ideal for infected or damaged tooth</p>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="card-1.png" alt="Card-1" class="teeth1" />
+                    <div class="card-content">
+                        <h3 class="card-title">Root Canal Treatment</h3>
+                        <p class="card-subtitle1">Ideal for infected or damaged tooth</p>
 
-                                <div class="card-section">
-                                    <strong class="rct">Types of RCT</strong>
-                                    <ul class="card-list">
-                                        <li>Root Canal Treatment</li>
-                                        <li>Split RCT</li>
-                                        <li>Split RCT with rubber dam</li>
-                                        <li>Split RCT with laser</li>
-                                    </ul>
-                                </div>
-
-                                <p class="price-label">Starting Price</p>
-                                <p class="price">₹ 19,999</p>
-
-                                <button class="cta-button">Get Free Consultation</button>
-                            </div>
+                        <div class="card-section">
+                            <p class="rct">Types of RCT</p>
+                            <ul class="card-list">
+                                <li>Root Canal Treatment</li>
+                                <li>Split RCT</li>
+                                <li>Split RCT with rubber dam</li>
+                                <li>Split RCT with laser</li>
+                            </ul>
                         </div>
-
-                        <!-- Second component -->
-
-                        <div class="carousel-item">
-                            <img src="card-2.png" alt="Card-2" class="card-2" />
-                            <div class="card-content">
-                                <h3 class="card-title">Re-Root Canal Treatment</h3>
-                                <p class="card-subtitle">Ideal issues that persist or recur after an initial root canal
-                                    treatment</p>
-
-                                <div class="card-section">
-                                    <strong>Types of RCT</strong>
-                                    <ul class="card-list">
-                                        <li>Re-RCT with rubber dam</li>
-                                        <li>Re-RCT laser specialist</li>
-                                        <li>e-RCT with retrieval of old RCT filling</li>
-                                    </ul>
-                                </div>
-
-                                <p class="price-label">Starting Price</p>
-                                <p class="price">₹ 19,999</p>
-
-                                <button class="cta-button">Get Free Consultation</button>
-                            </div>
+                        <div class="price-list">
+<p class="price-label">Starting Price</p>
+                        <p class="price">₹ 19,999</p>
                         </div>
-
-
+                        <button class="cta-button">Get Free Consultation</button>
                     </div>
                 </div>
-            
+
+                <!-- Second component -->
+
+                <div class="carousel-item">
+                    <img src="card-2.png" alt="Card-2" class="teeth2" />
+                    <div class="card-content">
+                        <h3 class="card-title">Re-Root Canal Treatment</h3>
+                        <p class="card-subtitle">
+                            Ideal issues that persist or recur after an initial root canal
+                            treatment
+                        </p>
+
+                        <div class="card-section">
+                            <p class="rct">Types of RCT</p>
+                            <ul class="card-list">
+                                <li>Re-RCT with rubber dam</li>
+                                <li>Re-RCT laser specialist</li>
+                                <li id="bigList">e-RCT with retrieval of old RCT filling</li>
+                            </ul>
+                        </div>
+                        <div class="price-list">
+<p class="price-label">Starting Price</p>
+                        <p class="price">₹ 19,999</p>
+                        </div>
+                        <button class="cta-button">Get Free Consultation</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <!-- Implants section ends here -->
+    <!-- Implants section ends here -->
 
-        <!-- Why Clove Section -->
+    <!-- Why Clove Section -->
+    <div class="why-clove-div">
         <section class="why-clove-section">
             <div class="why-clove">
                 <p class="why-head">Why Choose Clove Dental</p>
-                <p class="why-description">Clove Dental is India's Leading dental care brand with 600+ clinic nationwide
+                <p class="why-description">
+                    Clove Dental is India's Leading dental care brand with 600+ clinic
+                    nationwide
                 </p>
             </div>
             <div class="navbarss">
-                <div>
-                    <img src="whyClove.png" alt="whyClove" class="why-clove-image" />
-                </div>
+                <img src="whyClove.png" alt="whyClove" class="why-clove-image" />
                 <div class="dropdown">
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
-                        <span class="dropdown-title">Experienced and Certified implantologist</span>
+                        <span class="dropdown-title">DORI - A.I enabled Dental Chair</span>
                         <span id="toggle-icon">+</span>
                     </div>
                     <ul class="dropdown-content" id="dropdown-content">
                         <li class="dropdows">1000+ Experienced Dentists</li>
-                        <li class="dropdows">Continuous training for dentists to keep <br>
-                            them up to date with the latest technology </li>
-                        <li class="dropdows">All Dentists are trained in various specialized field for comprehensive
-                            care.
+                        <li class="dropdows">
+                            Continuous training for dentists to keep <br />
+                            them up to date with the latest technology
                         </li>
-                        <li class="dropdows">Tailored treatment plants to address individual patient needs.</li>
+                        <li class="dropdows">
+                            All Dentists are trained in various specialized field for
+                            comprehensive care.
+                        </li>
+                        <li class="dropdows">
+                            Tailored treatment plants to address individual patient needs.
+                        </li>
+                    </ul>
+
+                     <div class="dropdown-header" onclick="toggleDropdown(this)">
+                        <span class="dropdown-title">10x Safety and 4 steps sterilization process</span>
+                        <span id="toggle-icon">+</span>
+                    </div>
+                    <ul class="dropdown-content" id="dropdown-content">
+                        <li class="dropdows">1000+ Experienced Dentists</li>
+                        <li class="dropdows">
+                            Continuous training for dentists to keep <br />
+                            them up to date with the latest technology
+                        </li>
+                        <li class="dropdows">
+                            All Dentists are trained in various specialized field for
+                            comprehensive care.
+                        </li>
+                        <li class="dropdows">
+                            Tailored treatment plants to address individual patient needs.
+                        </li>
                     </ul>
 
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
-                        <span class="dropdown-title">Patient Centric Approach</span>
+                        <span class="dropdown-title">Experienced and Certified implantologist</span>
                         <span id="toggle-icon">+</span>
                     </div>
                     <ul class="dropdown-content" id="dropdown-content2">
                         <li class="dropdows">1000+ Experienced Dentists</li>
-                        <li class="dropdows">Continuous training for dentists to keep <br>
-                            them up to date with the latest technology </li>
-                        <li class="dropdows">All Dentists are trained in various specialized field for comprehensive
-                            care.
+                        <li class="dropdows">
+                            Continuous training for dentists to keep <br />
+                            them up to date with the latest technology
                         </li>
-                        <li class="dropdows">Tailored treatment plants to address individual patient needs.</li>
+                        <li class="dropdows">
+                            All Dentists are trained in various specialized field for
+                            comprehensive care.
+                        </li>
+                        <li class="dropdows">
+                            Tailored treatment plants to address individual patient needs.
+                        </li>
                     </ul>
 
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
@@ -198,155 +234,181 @@
                     </div>
                     <ul class="dropdown-content" id="dropdown-content3">
                         <li class="dropdows">1000+ Experienced Dentists</li>
-                        <li class="dropdows">Continuous training for dentists to keep <br>
-                            them up to date with the latest technology </li>
-                        <li class="dropdows">All Dentists are trained in various specialized field for comprehensive
-                            care.
+                        <li class="dropdows">
+                            Continuous training for dentists to keep <br />
+                            them up to date with the latest technology
                         </li>
-                        <li class="dropdows">Tailored treatment plants to address individual patient needs.</li>
+                        <li class="dropdows">
+                            All Dentists are trained in various specialized field for
+                            comprehensive care.
+                        </li>
+                        <li class="dropdows">
+                            Tailored treatment plants to address individual patient needs.
+                        </li>
                     </ul>
 
                     <div class="dropdown-header" onclick="toggleDropdown(this)">
-                        <span class="dropdown-title">AI enabled Dental Chair</span>
+                        <span class="dropdown-title">Regular Audits for safety protocols</span>
                         <span id="toggle-icon">+</span>
                     </div>
                     <ul class="dropdown-content" id="dropdown-content4">
                         <li class="dropdows">1000+ Experienced Dentists</li>
-                        <li class="dropdows">Continuous training for dentists to keep <br>
-                            them up to date with the latest technology </li>
-                        <li class="dropdows">All Dentists are trained in various specialized field for comprehensive
-                            care.
+                        <li class="dropdows">
+                            Continuous training for dentists to keep <br />
+                            them up to date with the latest technology
                         </li>
-                        <li class="dropdows">Tailored treatment plants to address individual patient needs.</li>
+                        <li class="dropdows">
+                            All Dentists are trained in various specialized field for
+                            comprehensive care.
+                        </li>
+                        <li class="dropdows">
+                            Tailored treatment plants to address individual patient needs.
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!-- Why Clove Section ends here -->
+    </div>
+    <!-- Why Clove Section ends here -->
 
-        <!-- Patients experience section -->
-        <section class="patients-say">
-            <div class="patients-say-head">
-                <p class="patients-head">What our Patients Say</p>
-                <p class="patients-description">Real smiles, real stories. Here's what our patients love about their
-                    CLOVE Dental experience!</p>
-            </div>
-
-            <!-- Patients Corousels section -->
-            <div class="carousels-container">
-                <div class="carousels">
-                    <div class="card">
-                        <img src="patient-1.png" alt="patient-1" class="patients-img">
-                        <div class="info">
-                            <div class="name-role">
-                                <span class="name">Shubham</span>
-                                <span class="treatment">Aligners</span>
-                            </div>
-                            <p class="location">Indore</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="patient-2.png" alt="patient-2" class="patients-img">
-                        <div class="info">
-                            <div class="name-role">
-                                <span class="name">Shubpreet</span>
-                                <span class="treatment">RCT</span>
-                            </div>
-                            <p class="location">Bangalore</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="patient-3.png" alt="patient-3" class="patients-img">
-                        <div class="info">
-                            <div class="name-role">
-                                <span class="name">Anita</span>
-                                <span class="treatment">Laser Treatment</span>
-                            </div>
-                            <p class="location">Banglore</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="patient-4.png" alt="patient-4" class="patients-img">
-                        <div class="info">
-                            <div class="name-role">
-                                <span class="name">Aarti</span>
-                                <span class="treatment">Debtures</span>
-                            </div>
-                            <p class="location">Indore</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-        </section>
-        <!-- Patients experience section ends here -->
-        <!-- Book Consultation section -->
-        <div class="consultation-section">
-            <div class="consultation-form">
-                <p class="consultation-head">
-                    Book an Appointment with Clove <br class="get-expert"> Dentist in Delhi
-                </p>
-                <div class="form2">
-                    <div class="input-boxes">
-                        <input type="text" placeholder="Name" class="input-box" />
-                        <input type="text" placeholder="Mobile Number" class="input-box" />
-                        <div class="captcha-container2">
-                            <span><input type="text" placeholder="Enter Captcha" id="captcha-input2" /></span>
-                            <span id="captcha-text2">81UA</span>
-                            <button class="captcha-refresh2" onclick="generateCaptcha2()">
-                                ↻
-                            </button>
-                        </div>
-                    </div>
-                    <div class="btn-checkbox">
-                        <div class="checkbox-container">
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <p class="checkbox-text">I agree to CLOVE Dental's <a href="#">Terms</a> and <a
-                                    href="#">Privacy
-                                    Policy</a> and consent to contact via phone, email, or SMS.</p>
-                        </div>
-
-                        <button class="book-consultation">Book a Free Consultation</button>
-                    </div>
-                </div>
-            </div>
-
+    <!-- Patients experience section -->
+    <section class="patients-say">
+        <div class="patients-say-head">
+            <p class="patients-head">What our Patients Say</p>
+            <p class="patients-description">
+                Real smiles, real stories. Here's what our patients love about their
+                CLOVE Dental experience!
+            </p>
         </div>
-        <!-- Book Consultation section ends here -->
 
-        <!-- Footer Section -->
-        <div class="footer">
-
-            <!-- Logo -->
-            <div class="logo">
-                <img src="logo2.png" alt="logo">
-            </div>
-
-            <div class="right-footer">
-                <!-- Navigation links -->
-                <div class="nav-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of service</a>
+        <!-- Patients Corousels section -->
+        <div class="carousels-container">
+            <div class="carousels">
+                <div class="card">
+                    <img src="patient-1.png" alt="patient-1" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Shubham</span>
+                            <span class="treatment">Aligners</span>
+                        </div>
+                        <p class="location">Indore</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="patient-2.png" alt="patient-2" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Shubpreet</span>
+                            <span class="treatment">RCT</span>
+                        </div>
+                        <p class="location">Bangalore</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="patient-3.png" alt="patient-3" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Anita</span>
+                            <span class="treatment">Laser Treatment</span>
+                        </div>
+                        <p class="location">Banglore</p>
+                    </div>
                 </div>
 
-                <!-- Divider line -->
-                <div class="divider"></div>
+                <div class="card">
+                    <img src="patient-4.png" alt="patient-4" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Aarti</span>
+                            <span class="treatment">Debtures</span>
+                        </div>
+                        <p class="location">Indore</p>
+                    </div>
+                </div>
 
-                <!-- Copyright text -->
-                <div class="copyright">
-                    © Copyright 2021 All Rights Reserved. Innovative Oral Care Solutions Pvt. Ltd. Managed By Unbundl
+                <div class="card">
+                    <img src="patient-5.png" alt="patient-5" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Aaditya</span>
+                            <span class="treatment">Implant</span>
+                        </div>
+                        <p class="location">Indore</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="patient-6.png" alt="patient-6" class="patients-img" />
+                    <div class="info">
+                        <div class="name-role">
+                            <span class="name">Nikira</span>
+                            <span class="treatment">Implant</span>
+                        </div>
+                        <p class="location">Indore</p>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
-        <!-- Footer Section ends here -->
-        <script src="script.js"></script>
+    </section>
+    <!-- Patients experience section ends here -->
+    <!-- Book Consultation section -->
+    <div class="appointment-clove-section">
+        <div class="appointment-clove">
+            <p class="clove-text">
+                Book an appointment with Clove Dentist in Delhi
+            </p>
+            <div class="inputs">
+                <input type="text" placeholder="Name" class="clove-input" />
+                <input type="text" placeholder="Phone" class="clove-input" />
+                <section class="captcha-section">
+                    <input type="text" placeholder="Captcha" id="captcha2" /><span class="captcha-code">1514</span>
+                </section>
+            </div>
+            <div class="other">
+                <div class="checkboxDiv2">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="checkbox" />
+                        <span class="custom-checkbox"></span>
+                    </label>
+                    <p class="checkbox-text22">
+                        I agree to CLOVE Dental's <a href="#">Terms</a> and
+                        <a href="#">Privacy Policy</a> and consent to contact via
+                        phone,email, or SMS.
+                    </p>
+                </div>
+                <button id="book-free-consultation">
+                    <p class="btn-text">Book a Free Consultation</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Book Consultation section ends here -->
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo2.png" alt="logo" />
+        </div>
+
+        <div class="right-footer">
+            <!-- Navigation links -->
+            <div class="nav-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of service</a>
+            </div>
+
+            <!-- Divider line -->
+            <div class="divider"></div>
+
+            <!-- Copyright text -->
+            <div class="copyright">
+                © Copyright 2021 All Rights Reserved. Innovative Oral Care Solutions
+                Pvt. Ltd. Managed By Unbundl
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section ends here -->
+    <script src="script.js"></script>
 </body>
 
 </html>

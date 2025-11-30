@@ -6,19 +6,21 @@
 
 body {
   font-family: "Figtree", sans-serif;
+  overflow-x: hidden;
 }
 
 .header {
-  background-color: beige;
+  background-color: #FFFAF5;
   padding: 10px;
   width: 100%;
-  height: auto;
+  height: 60px;
   display: flex;
   justify-content: space-between;
 }
 
 .logo-image {
-  padding: 0.2rem 0 0 0;
+  width: 101px;
+  height: 41px;
 }
 
 .right-header {
@@ -31,10 +33,14 @@ body {
 
 .book-appointment,
 .booking-number {
-  border-radius: 1rem;
-  padding: 0.5rem 0.6rem;
-  max-height: 3rem;
-  font-size: 1rem;
+  border-radius: 70px;
+  padding: 8px 12px 8px 12px;
+  height: 38px;
+}
+
+.booking-number p {
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .book-appointment {
@@ -46,9 +52,12 @@ body {
 .booking-number {
   border: 1px solid black;
   font-weight: 800;
+  width: 154px;
+  gap: 12px;
+  height: 38px;
+  padding: 8px 12px 8px 12px;
   background-color: white;
   display: flex;
-  gap: 0.5rem;
 }
 .book-icon,
 .phone-icon {
@@ -61,7 +70,8 @@ body {
   position: relative;
 }
 .book-appointment-image {
-  height: 352px;
+  height: 394px;
+  width: 390px;
 }
 .different-company-list {
   border-radius: 5px;
@@ -69,12 +79,12 @@ body {
   right: 0%;
 }
 .book-appointment-link {
-  min-width: 100%;
-  min-height: 13rem;
+  width: 100%;
+  height: 205px;
   align-items: flex-start;
   top: 20%;
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #FFFFFF80;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -84,28 +94,28 @@ body {
 .doctor-image {
   position: absolute;
   z-index: 1;
-  left: 55%;
-  top: 38.6%;
-  max-height: 216px;
+  right: -5%;
+  bottom: 0%;
+  height: 280px;
 }
 .appointment-button {
-  min-width: 200px;
+  width: 205px;
+  height: 38px;
   border-radius: 20px;
-  flex: 0 0 auto;
   display: flex;
-  padding: 4px 0 4px 12px;
   gap: 10px;
+  margin-top: 20px;
+  border: none;
   z-index: 20;
+  color: white;
+  font-family: figtree;
+  font-weight: 600;
   align-items: center;
   background-color: rgba(248, 148, 63, 1);
-  margin-top: 10px;
-  color: white;
-  font-family: "Figtree", sans-serif;
-  font-size:medium;
-  font-weight: 600;
+  justify-content: center;
 }
 .text-1 {
-  font-size: large;
+  font-size: 16px;
   font-weight: 800;
 }
 .text-2 {
@@ -121,44 +131,70 @@ body {
   flex-direction: column;
   overflow: hidden;
 }
-.dental-guidance-section {
-  background-color: rgba(255, 249, 244, 1); 
+.outer-box{
+  width: 100%;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.dental-guidance-section {
+  background-color:#FFF9F4;
+  border-radius: 20px; 
+  padding-top: 20px;
+  width: 91.8%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
 }
-.dental-guidance-section .dental-guidance-head {
-  font-size: larger;
-}
 .dental-guidance-head {
-  min-width: 80%;
-  padding: 10px;
   font-weight: 700;
   text-align: center;
-  font-size: small;
+  font-size: 20px;
   color: rgba(48, 48, 48, 1);
 }
 .dental-guidance-description {
   font-weight: 400;
-  font-size: x-small;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  
   text-align: center;
   color: rgba(71, 71, 71, 1);
 }
 .dental-guidance-form {
+  background-color:#FFF9F4;
+  width: 91%;
+  gap: 24px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.dental-guidance-form2{
+  background-color:#FFF9F4;
+  width: 90%;
+  gap: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox2{
   display: flex;
   flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  min-height: 270px;
-  background-color: rgba(255, 249, 244, 1);
-  border-radius: 0 0 24px 24px;
 }
 .name-input,
 .mobile-input {
-  min-width: 90%;
+  width: 100%;
   height: 38px;
   gap: 10px;
   padding: 17px 16px 17px 16px;
@@ -170,14 +206,13 @@ body {
 }
 .captcha-container {
   display: flex;
-  flex-grow: initial;
-  min-width: 90%;
+  width: 100%;
   justify-content: center;
 }
 #captcha-input {
   padding: 6px 6px 6px 12px ;
-  min-width:  70%;
-  flex-wrap: nowrap;
+  width:  70%;
+  height: 38px;
   border-radius: 24px 0 0px 24px;
   border-width: 1px;
   font-weight: 400;
@@ -186,56 +221,85 @@ body {
 }
 
 #captcha-text {
-  padding: 5px;
-  min-width: 18%;
-  background-color: white;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  font-size: 14px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: #462512;
   border-radius: 0px 24px 24px 0px;
   border: 1px solid rgba(255, 224, 196, 1);
 }
 
-.captcha-refresh {
+/*  .captcha-refresh {
   border-radius: 100%;
   min-width: 30px;
-  margin-left: 10px;
   padding: 5px;
   font-weight: 600;
   font-size: medium;
   border: 1px solid rgba(255, 224, 196, 1);
   background-color: white;
-}
-.checkbox-container {
+}  */
+.checkboxDiv{
+  width: 100%;
   display: flex;
-  max-width: 100%;
-  gap: 3px;
-  padding: 0 10px 0 10px;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  justify-content: center;
+}
+.checkbox-container input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.custom-checkbox{
+  height: 18px;
+  width: 18px;
+   border: 1px solid #FFE0C4;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+.checkbox-text{
   text-align: center;
+  width: 366px;
+  height: 19px;
+  font-size: 12px;
 }
-#checkbox {
-  border-radius: 5px;
-}
-.checkbox-text {
-  font-weight: 400;
-  font-size: x-small;
-  text-align: center;
-  color: rgba(48, 48, 48, 1);
-}
+
 .book-consultation {
+  width:100%;
+  height: 38px;
   background-color: rgba(245, 132, 32, 1);
-  padding: 8px;
+  padding: 8px 24px 8px 24px;
   border-radius: 24px;
-  max-height: 38px;
+  height: 38px;
   font-family: "Figtree", sans-serif;
   color: white;
   font-weight: 600;
   font-size: 14px;
+  border: 1px solid #DE6F0D;
+  display: flex;
+  justify-content: center;
 }
 .implants-type {
+  margin-top: 60px;
+  display: flex;
+  height: 703px;
+  flex-direction: column; 
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+.implants-head{
+  height: 95px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  max-height: 50rem;
-  text-align: center;
+  gap: 8px;
 }
 .implants-heading {
   font-family: "figree", sans-serif;
@@ -246,8 +310,8 @@ body {
 .implants-description {
   font-family: "figree", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  color: rgba(71, 71, 71, 1);
+  font-size: 16px;
+  color: #474747;
 }
 .implants-head {
   display: flex;
@@ -259,18 +323,20 @@ body {
   align-items: center;
 }
 .carousel-container {
-  min-width: 100%;
+  padding-left: 10px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   display: flex;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  height: 100%;
 }
 .carousel-item {
-  width: 300px; 
+  width: 285px; 
+  height: 588px;
   scroll-snap-align: center;
-  border-radius: 10px;
-  border: 1px solid rgba(248, 148, 63, 1);
+  border-radius: 20px;
+  border: 1px solid #FFE0C4;
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -292,34 +358,46 @@ body {
 }
 
 .card-content {
-  padding: 10px;
+  padding: 16px 20px 16px 20px;
   text-align: left;
+  height: 303px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
-  font-size: 1.1rem;
+  font-size: 16px;
+  width: 194px;
+  height: 19px;
   font-weight: 700;
-  margin: 0;
-  color: #303030;
-  font-family: "Figtree", sans-serif;
+  color: black;
+  font-family: Raleway;
 }
 
+.card-subtitle1{
+    font-size: 14px;
+  color: #474747;
+  margin: 10px 0 10px 0 ;
+}
 .card-subtitle {
-  font-size: 0.875rem;
-  color: #555;
-  margin: 0.3rem 0 1rem;
+  font-size: 14px;
+  color: #474747;
+  margin: 10px 0 10px 0 ;
 }
-
+.rct{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
 .card-section strong {
   font-size: 0.95rem;
   color: #303030;
 }
 
 .card-list {
-  padding-left: 1.2rem;
-  font-size: 0.85rem;
+  padding-left: 20px;
+  font-size: 14px;
   color: #444;
-  margin: 0.5rem 0;
 }
 
 .price-label {
@@ -340,8 +418,8 @@ body {
 }
 
 .cta-button {
-  width: 100%;
-  padding: 0.7rem;
+  width: 245px;
+  height: 38px;
   background-color: #f58420;
   color: white;
   font-weight: 600;
@@ -356,29 +434,50 @@ body {
 .cta-button:hover {
   background-color: #e07114;
 }
-.card-1,
-.card-2 {
-  width: 20rem;
-  height: 20rem;
+.teeth1 , .teeth2{
+  width: 285px;
+  height: 285px;
 }
 
 /* Why Clove Section */
+.why-clove-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
 
 .why-clove-section {
   display: flex;
   flex-direction: column;
   font-family: "figtree", sans-serif;
   align-items: center;
-  padding: 0 1rem 0 1rem;
-  margin-bottom: 3rem;
+  width: 91.8%;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.why-clove-image{
+  height: 250px;
+  width: 100%;  
+   border-radius: 20px; 
+   object-fit: fill;
+}
+.navbarss{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 .why-clove {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   text-align: center;
-  gap: 5px;
-  margin-bottom: 1rem;
+  gap: 8px;
+  height: 76px;
 }
 .why-head {
   font-family: "figtree", sans-serif;
@@ -390,25 +489,26 @@ body {
   font-family: "figtree", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: rgba(71, 71, 71, 1);
+  color: #474747;
 }
 
 /* Dropdowns */
 .dropdown {
-  max-width: 23rem;
-  min-width: 23rem;
+  width: 100%;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .dropdown-header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
+  width: 100%;
+  gap: 24px;
 }
 
 .dropdown-content {
@@ -436,6 +536,8 @@ body {
 }
 #toggle-icon {
   color: rgba(234, 125, 40, 1);
+  height: 12px;
+  width: 12px;
 }
 
 /*-- Patients experience section */
@@ -443,7 +545,7 @@ body {
 .patients-say {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  height: 520px;
 }
 .patients-say-head {
   display: flex;
@@ -454,6 +556,7 @@ body {
   font-family: "Figtree", sans-serif;
 }
 .patients-head {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
   color: rgba(48, 48, 48, 1);
@@ -468,36 +571,27 @@ body {
 }
 
 /* Patients Corousels */
-.carousel-container {
-  max-width: 350px;
-  min-width: 300px;
-  min-height: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: "Figtree", sans-serif;
-}
 
 .carousel {
   display: flex;
   gap: 16px;
-  padding: 16px;
-  overflow-x: scroll;
+  align-items: center;
+   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .carousels-container {
-  max-width: 350px;
-  min-width: 300px;
-  min-height: 600px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   font-family: "Figtree", sans-serif;
 }
 .carousels {
   display: flex;
+  width: 100%;
+  height: 420px;
   gap: 16px;
-  padding: 16px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
@@ -510,22 +604,26 @@ body {
 
 .card {
   flex-shrink: 0;
-  width: calc(100% - 32px);
+  width: 200px;
+  height: 423px;
+  padding: 0px 0px 0px 10px;
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
 }
 
 .card img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 12px 12px;
+  height: 360px;
+  width: 200px;
 }
 
 .info {
-  padding: 10px;
   background-color: white;
+}
+.location{
+  color: #777777;
+  font-size: 12px;
 }
 
 .name-role {
@@ -554,17 +652,19 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .consultation-form {
   width: 90%;
+  height: 378px;
   background-color: rgba(255, 249, 244, 1);
   display: flex;
-  gap: 2rem;
+  gap: 24px;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  padding-top: 1rem;
+  padding: 16px;
 }
 .consultation-head {
   font-family: "Figree", sans-serif;
@@ -630,7 +730,6 @@ body {
   background-color: #3c2415;
   color: white;
   padding: 20px;
-  margin-top: 2rem;
 }
 
 /* Logo styling */
@@ -638,10 +737,14 @@ body {
   margin-top: 15px;
   margin-bottom: 25px;
 }
+.logo img{
+  height: 44px;
+}
 
 .nav-links {
   text-align: right;
   margin-top: -80px;
+
 }
 
 .nav-links a {
@@ -649,6 +752,8 @@ body {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
+  font-size: 16px;
+  font-family: figtree;
 }
 
 /* Divider line */
@@ -664,3 +769,97 @@ body {
   line-height: 1.5;
 }
 
+.appointment-clove-section{
+  width: 100%;
+  height: 378px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.appointment-clove{
+  border-radius: 20px;
+  gap: 24px;
+  text-align: center;
+  width: 91.6%;
+  height: 100%;
+  padding: 16px;
+  background-color: #FFF9F4;
+  display: flex;
+  flex-direction: column;
+}
+.clove-text{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #303030;
+}
+.inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.clove-input{
+  height: 38px;
+  font-size: 14px;
+  color: #777777;
+  border-radius: 24px;
+  border: 1px solid #FFE0C4;
+  padding: 17px 16px 17px 16px;
+  width: 100%;
+}
+.checkbox-text22{
+  font-size: 12px;
+}
+.checkboxDiv2{
+  display: flex;
+  gap: 8px;
+}
+#captcha2{
+  border-radius: 24px 0 0 24px;
+  border: 1px solid #FFE0C4;
+  padding: 17px 16px;
+  width: 223px;
+  height: 38px;
+}
+.captcha-section{
+  display: flex;
+}
+.captcha-code{
+width: 103px;
+height: 38px;
+background-color: #462512;
+padding: 17px 16px 17px 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0 24px 24px 0;
+font-size: 14px;
+font-weight: 400;
+font: figtree;
+color: white;
+}
+.other{
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+#book-free-consultation{
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F58420;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: white;
+  border: none;
+  padding: 16px;
+}
+.btn-text{
+  width: 180px;
+  height: 10px;
+}
