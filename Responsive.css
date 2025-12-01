@@ -402,32 +402,38 @@
   gap: 8px;
   font-size: 12px;
 }
-  .footer {
+
+/*Footer section */
+ .bigger-footer{
+    width: 100%;
+    background-color: #462512;
+    height: 149px;
+    justify-content: space-between;
     display: flex;
-    min-width: 768px;
-    gap: 5rem;
-    max-height: 130px;
-  }
-  .right-footer {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin: 0;
-    justify-content: flex-end;
     align-items: center;
+    padding: 40px 60px;
   }
-  .divider {
-    margin: 0;
+  .anchor-tags{
+    display: flex;
+    justify-content: flex-end;
+    gap: 27px;
   }
-  .copyright {
-    margin-top: 10px;
-    font-size: 10px;
+  .anchor-tags a{
+    text-decoration: none;
+    color: white;
   }
+  .bigger-left{
+    display: flex;
+    width: 63.4%;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bigger-copyright p{
+    color: white ;
+    font-size: 12px;
+    text-align: right;
+  }
+
 }
 
 
@@ -515,17 +521,7 @@
   display: flex;
   height: 19px;
 }
-  .footer{
-    min-width: 100%;
-    gap: 12rem;
-  }
-  .nav-links{
-    font-size: larger;
-  }
-  .copyright{
-    font-size: small;
-  }
-  }
+}
 
 @media (min-width: 1440px){
   .book-appointment{
@@ -827,12 +823,33 @@ color: #474747;
     height: 422px;
     justify-content: space-between;
   }
-  .footer{
-      justify-content: space-around;
-      display: flex;
+  .bigger-footer{
+    width: 100%;
+    background-color: #462512;
+    height: 149px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
   }
-  .logo img{
-    width: 170px;
-    height: 69px;
+  .anchor-tags{
+    display: flex;
+    justify-content: flex-end;
+    gap: 27px;
+  }
+  .anchor-tags a{
+    text-decoration: none;
+    color: white;
+  }
+  .bigger-left{
+    display: flex;
+    width: 63.4%;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bigger-copyright p{
+    color: white ;
+    font-size: 14px;
+    text-align: right;
   }
 }
