@@ -433,7 +433,9 @@
     font-size: 12px;
     text-align: right;
   }
-
+  .smaller-footer{
+    display: none;
+  }
 }
 
 
