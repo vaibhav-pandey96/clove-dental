@@ -831,4 +831,8 @@ color: #474747;
       justify-content: space-around;
       display: flex;
   }
+  .logo img{
+    width: 170px;
+    height: 69px;
+  }
 }

@@ -441,6 +441,7 @@ body {
 
 /* Why Clove Section */
 .why-clove-div{
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   width: 100%;
