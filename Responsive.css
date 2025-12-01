@@ -523,6 +523,9 @@
   display: flex;
   height: 19px;
 }
+.smaller-footer{
+  display: none;
+}
 }
 
 @media (min-width: 1440px){
@@ -853,5 +856,8 @@ color: #474747;
     color: white ;
     font-size: 14px;
     text-align: right;
+  }
+  .smaller-footer{
+    display: none;
   }
 }
